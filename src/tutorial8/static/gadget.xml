@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+  <ModulePrefs title="Hello Wave" height="120">
+    <Require feature="wave" /> 
+  </ModulePrefs>
+  <Content type="html">
+    <![CDATA[     
+    <script type="text/javascript">
+
+    function buttonClicked() {
+      var add1 = document.getElementById('add1').value;
+      var add2 = document.getElementById('add2').value;
+
+      var sum = parseInt(add1) + parseInt(add2);
+      document.getElementById('sum').value = sum;
+    }
+    
+    </script>
+    <div style="height: 50px;">
+    <input type="text" id="add1" value="2" /><br>
+      <input type="text" id="add2" value="3" /><br>
+      <input type=button value="+" id="add" onClick="buttonClicked()"><br>
+      <input type="text" id="sum" value="" />
+    </div>
+    ]]>
+  </Content>
+</Module>

@@ -1,0 +1,13 @@
+application: jcgbot
+version: 1 
+runtime: python
+api_version: 1
+
+handlers:
+- url: /_wave/.*
+  script: robot.py
+
+- url: /static/(.*)
+  static_files: static/\1
+  upload: static/(.*)
+
