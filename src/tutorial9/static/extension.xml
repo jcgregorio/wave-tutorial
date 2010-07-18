@@ -1,0 +1,11 @@
+<extension 
+    name="Addition"
+    thumbnailUrl="http://jcgbot.appspot.com/static/thumbnail.png"
+    description="Creates a wave that does addition."> 
+  <author name="Google"/> 
+  <menuHook location="NewWaveMenu" text="New Addition Wave"> 
+    <addParticipants>
+      <participant id="jcgbot@appspot.com"/>
+    </addParticipants>
+  </menuHook> 
+</extension>
